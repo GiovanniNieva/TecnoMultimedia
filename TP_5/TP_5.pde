@@ -9,7 +9,11 @@ import ddf.minim.*;
 
 
  Minim soundengine;
-AudioPlayer sonido1;
+AudioSample sonido1;
+AudioSample sonido2;
+AudioSample sonido3;
+AudioSample sonido4;
+
 
 //SoundFile cancion;
 Pantallas pantallas;
@@ -35,12 +39,15 @@ void setup() {
  // cancion.play();
   
   soundengine = new Minim(this);
-  sonido1 = soundengine.loadFile("song.wav", 1024);
+  sonido1 = soundengine.loadSample("1.wav", 1024);
+  sonido2 = soundengine.loadSample("2.wav", 1024);
+  sonido3 = soundengine.loadSample("3.wav", 1024);
+  sonido4 = soundengine.loadSample("4.wav", 1024);
 }
 
 void draw() {
   
-    mp3.musica();
+
   
   if (Pantalla == 0) {
     pantallas.PantallaInicio();
@@ -58,6 +65,12 @@ void mousePressed() {
   if (Pantalla == 0) {
     Pantalla = 1;
   }
+}
+
+void keyPressed(){
+
+      mp3.musica();
+  
 }
 
 
