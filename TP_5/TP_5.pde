@@ -4,6 +4,8 @@
  Gaitan, Agustin Lucas - Legajo 91347/8
  Merchena, Nicolás - Legajo:91568/0
  Giovanni, Nieva - legajo:91312/5
+ 
+ importar la carpeta de sonido minim
  */
 import ddf.minim.*;
 
